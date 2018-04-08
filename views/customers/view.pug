@@ -1,0 +1,89 @@
+extends ../layout
+
+block content
+
+  .row
+    .col-md-3
+      .card
+        .card-body
+          .card-two
+            header
+              .avatar
+                if (customer.gender == "Female")
+                  img(src="https://randomuser.me/api/portraits/women/27.jpg")
+                else
+                  img(src="https://randomuser.me/api/portraits/men/22.jpg")
+
+
+            h3= customer.name
+            .desc= customer.occupation
+            .contacts
+              p.text-center
+                i.fa.fa-phone= " " + customer.mobile
+              p.text-center
+                i.fa.fa-envelope=  customer.email
+              p.text-center= "Age: " + customer.age
+              p.text-center= "Gender: " + customer.gender
+              p.text-center= "Home Address: " + customer.address.home
+              p.text-center= "Office Address: " + customer.address.office
+            .clear
+    .col-md-9
+      .row
+        .col-md-4
+          .card.bg-pink.p-20
+            .media.widget-ten
+              .media-left.meida.media-middle
+                span
+                  i.ti-comment.f-s-40
+              .media-body.media-text-right
+                h2.color-white= "Rs. " + customer.income
+                p.m-b-0 Monthly Income
+        .col-md-4
+          .card.bg-success.p-20
+            .media.widget-ten
+              .media-left.meida.media-middle
+                span
+                  i.ti-vector.f-s-40
+              .media-body.media-text-right
+                h2.color-white Rs. 9867
+                p.m-b-0 Average Weekly Expenditure
+        .col-md-4
+          .card.bg-danger.p-20
+            .media.widget-ten
+              .media-left.meida.media-middle
+                span
+                  i.ti-location-pin.f-s-40
+              .media-body.media-text-right
+                h2.color-white Addidas
+                p.m-b-0 Most Visited Vendor
+      .row
+        .col-lg-6
+          .card
+            .card-title
+              h4 Expenditure per Month
+            .sales-chart
+              .ct-bar-chart(style='height:350px')
+          // /# card
+        // /# column
+        .col-lg-6
+          .card
+            .card-title
+              h4 Top 5 Recommended Items
+            .card-body
+              .table-responsive
+                table.table.table-hover
+                    thead
+                      tr
+                        th.text-left Vendor
+                    tbody
+                      each r in recomms
+                        tr
+                          td.text-left= r.id
+      .row
+        .col-lg-12
+          .card
+            .card-block
+              h4 Customer Profile
+              .sales-chart
+                .ct-bar-chartss(style='height:350px')
+        // /# column

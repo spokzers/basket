@@ -1,0 +1,56 @@
+extends layout
+
+block content
+
+  .row
+    .col-md-3
+      .card.bg-primary.p-20
+        .media.widget-ten
+          .media-left.meida.media-middle
+            span
+              i.ti-bag.f-s-40
+          .media-body.media-text-right
+            h2.color-white Rs. 96, 438
+            p.m-b-0 Highest Sales
+    .col-md-3
+      .card.bg-pink.p-20
+        .media.widget-ten
+          .media-left.meida.media-middle
+            span
+              i.ti-comment.f-s-40
+          .media-body.media-text-right
+            h2.color-white Gul Ahmed
+            p.m-b-0 Top Vendor
+    .col-md-3
+      .card.bg-success.p-20
+        .media.widget-ten
+          .media-left.meida.media-middle
+            span
+              i.ti-vector.f-s-40
+          .media-body.media-text-right
+            h2.color-white +4%
+            p.m-b-0 Growth (since last week)
+    .col-md-3
+      .card.bg-danger.p-20
+        .media.widget-ten
+          .media-left.meida.media-middle
+            span
+              i.ti-location-pin.f-s-40
+          .media-body.media-text-right
+            h2.color-white DHA Phase VIII
+            p.m-b-0 Most Popular Location
+  .row
+    .col-lg-6
+      .card
+        .card-title
+          h4 Sales per Month
+        .sales-chart
+          .ct-bar-chart(style='height:350px')
+      // /# card
+    // /# column
+    .col-lg-6
+      .card
+        .card-block
+          h4.card-title Sales Trend over the Week
+          .ct-svg-chart(style='height:420px')
+    // /# column

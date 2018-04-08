@@ -1,0 +1,255 @@
+// header header
+.header
+  nav.navbar.top-navbar.navbar-expand-md.navbar-light
+    // Logo
+    .navbar-header
+      a.navbar-brand(href='index.html')
+        // Logo icon
+        b
+          img.dark-logo( alt='Basket')
+        // End Logo icon
+        // Logo text
+        span
+          //- img.dark-logo( alt='Basket')
+    // End Logo
+    .navbar-collapse
+      // toggle and nav items
+      ul.navbar-nav.mr-auto.mt-md-0
+        // This is
+        li.nav-item
+          a.nav-link.nav-toggler.hidden-md-up.text-muted(href='javascript:void(0)')
+            i.mdi.mdi-menu
+        li.nav-item.m-l-10
+          a.nav-link.sidebartoggler.hidden-sm-down.text-muted(href='javascript:void(0)')
+            i.ti-menu
+        // Messages
+        li.nav-item.dropdown.mega-dropdown
+          a.nav-link.dropdown-toggle.text-muted(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fa.fa-th-large
+          .dropdown-menu.animated.zoomIn
+            ul.mega-dropdown-menu.row
+              li.col-lg-3.m-b-30
+                h4.m-b-20 CONTACT US
+                // Contact
+                form
+                  .form-group
+                    input#exampleInputname1.form-control(type='text', placeholder='Enter Name')
+                  .form-group
+                    input.form-control(type='email', placeholder='Enter email')
+                  .form-group
+                    textarea#exampleTextarea.form-control(rows='3', placeholder='Message')
+                  button.btn.btn-info(type='submit') Submit
+              li.col-lg-3.col-xlg-3.m-b-30
+                h4.m-b-20 List style
+                // List style
+                ul.list-style-none
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+              li.col-lg-3.col-xlg-3.m-b-30
+                h4.m-b-20 List style
+                // List style
+                ul.list-style-none
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+              li.col-lg-3.col-xlg-3.m-b-30
+                h4.m-b-20 List style
+                // List style
+                ul.list-style-none
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+                  li
+                    a(href='javascript:void(0)')
+                      i.fa.fa-check.text-success
+                      |  This Is Another Link
+        // End Messages
+      // User profile and search
+      ul.navbar-nav.my-lg-0
+        // Search
+        li.nav-item.hidden-sm-down.search-box
+          a.nav-link.hidden-sm-down.text-muted(href='javascript:void(0)')
+            i.ti-search
+          form.app-search
+            input.form-control(type='text', placeholder='Search here')
+            a.srh-btn
+              i.ti-close
+        // Comment
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle.text-muted.text-muted(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fa.fa-bell
+            .notify
+              span.heartbit
+              span.point
+          .dropdown-menu.dropdown-menu-right.mailbox.animated.zoomIn
+            ul
+              li
+                .drop-title Notifications
+              li
+                .message-center
+                  // Message
+                  a(href='#')
+                    .btn.btn-danger.btn-circle.m-r-10
+                      i.fa.fa-link
+                    .mail-contnet
+                      h5 This is title
+                      span.mail-desc Just see the my new admin!
+                      span.time 9:30 AM
+                  // Message
+                  a(href='#')
+                    .btn.btn-success.btn-circle.m-r-10
+                      i.ti-calendar
+                    .mail-contnet
+                      h5 This is another title
+                      span.mail-desc Just a reminder that you have event
+                      span.time 9:10 AM
+                  // Message
+                  a(href='#')
+                    .btn.btn-info.btn-circle.m-r-10
+                      i.ti-settings
+                    .mail-contnet
+                      h5 This is title
+                      span.mail-desc You can customize this template as you want
+                      span.time 9:08 AM
+                  // Message
+                  a(href='#')
+                    .btn.btn-primary.btn-circle.m-r-10
+                      i.ti-user
+                    .mail-contnet
+                      h5 This is another title
+                      span.mail-desc Just see the my admin!
+                      span.time 9:02 AM
+              li
+                a.nav-link.text-center(href='javascript:void(0);')
+                  strong Check all notifications
+                  i.fa.fa-angle-right
+        // End Comment
+        // Messages
+        li.nav-item.dropdown
+          a#2.nav-link.dropdown-toggle.text-muted(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fa.fa-envelope
+            .notify
+              span.heartbit
+              span.point
+          .dropdown-menu.dropdown-menu-right.mailbox.animated.zoomIn(aria-labelledby='2')
+            ul
+              li
+                .drop-title You have 4 new messages
+              li
+                .message-center
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='/ela/images/users/5.jpg', alt='user')
+                      span.profile-status.online.pull-right
+                    .mail-contnet
+                      h5 Michael Qin
+                      span.mail-desc Just see the my admin!
+                      span.time 9:30 AM
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='/ela/images/users/2.jpg', alt='user')
+                      span.profile-status.busy.pull-right
+                    .mail-contnet
+                      h5 John Doe
+                      span.mail-desc I've sung a song! See you at
+                      span.time 9:10 AM
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='/ela/images/users/3.jpg', alt='user')
+                      span.profile-status.away.pull-right
+                    .mail-contnet
+                      h5 Mr. John
+                      span.mail-desc I am a singer!
+                      span.time 9:08 AM
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='/ela/images/users/4.jpg', alt='user')
+                      span.profile-status.offline.pull-right
+                    .mail-contnet
+                      h5 Michael Qin
+                      span.mail-desc Just see the my admin!
+                      span.time 9:02 AM
+              li
+                a.nav-link.text-center(href='javascript:void(0);')
+                  strong See all e-Mails
+                  i.fa.fa-angle-right
+        // End Messages
+        // Profile
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle.text-muted(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.profile-pic(src='/ela/images/users/5.jpg', alt='user')
+          .dropdown-menu.dropdown-menu-right.animated.zoomIn
+            ul.dropdown-user
+              li
+                a(href='#')
+                  i.ti-user
+                  |  Profile
+              li
+                a(href='#')
+                  i.ti-wallet
+                  |  Balance
+              li
+                a(href='#')
+                  i.ti-email
+                  |  Inbox
+              li
+                a(href='#')
+                  i.ti-settings
+                  |  Setting
+              li
+                a(href='#')
+                  i.fa.fa-power-off
+                  |  Logout
+// End header header

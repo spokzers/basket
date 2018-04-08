@@ -1,0 +1,80 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    // Tell the browser to be responsive to screen width
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    // Favicon icon
+    link(rel='icon', type='image/png', sizes='16x16', href='images/favicon.png')
+    title Basket - Customer Profiling
+    link(href='/ela/css/lib/chartist/chartist.min.css', rel='stylesheet')
+    link(href='/ela/css/lib/owl.carousel.min.css', rel='stylesheet')
+    link(href='/ela/css/lib/owl.theme.default.min.css', rel='stylesheet')
+    // Bootstrap Core CSS
+    link(href='/ela/css/lib/bootstrap/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css', rel='stylesheet')
+    link(href='/ela/css/helper.css', rel='stylesheet')
+    link(href='/ela/css/style.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file:**
+    //if lt IE 9
+      script(src='https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body.fix-header.fix-sidebar
+    // Preloader - style you can find in spinners.css
+    .preloader
+      svg.circular(viewbox='25 25 50 50')
+        circle.path(cx='50', cy='50', r='20', fill='none', stroke-width='2', stroke-miterlimit='10')
+    // Main wrapper
+    #main-wrapper
+      include partials/header
+      include partials/sidebar
+      // Page wrapper
+      .page-wrapper
+        // Bread crumb
+        .row.page-titles
+          .col-md-5.align-self-center
+            h3.text-primary= title
+          .col-md-7.align-self-center
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='javascript:void(0)') Home
+              li.breadcrumb-item.active= title
+        // Container fluid
+        .container-fluid
+          block content
+
+      include partials/footer
+
+
+    // All Jquery
+    script(src='/ela/js/lib/jquery/jquery.min.js')
+    // Bootstrap tether Core JavaScript
+    script(src='/ela/js/lib/bootstrap/js/popper.min.js')
+    script(src='/ela/js/lib/bootstrap/js/bootstrap.min.js')
+    // slimscrollbar scrollbar JavaScript
+    script(src='/ela/js/jquery.slimscroll.js')
+    // Menu sidebar
+    script(src='/ela/js/sidebarmenu.js')
+    // stickey kit
+    script(src='/ela/js/lib/sticky-kit-master/dist/sticky-kit.min.js')
+    script(src='/ela/js/lib/datamap/d3.min.js')
+    script(src='/ela/js/lib/datamap/topojson.js')
+    script(src='/ela/js/lib/datamap/datamaps.world.min.js')
+    script(src='/ela/js/lib/datamap/datamap-init.js')
+    script(src='/ela/js/lib/weather/jquery.simpleWeather.min.js')
+    script(src='/ela/js/lib/weather/weather-init.js')
+    script(src='/ela/js/lib/owl-carousel/owl.carousel.min.js')
+    script(src='/ela/js/lib/owl-carousel/owl.carousel-init.js')
+    script(src='/ela/js/lib/chartist/chartist.min.js')
+    script(src='/ela/js/lib/chartist/chartist-plugin-tooltip.min.js')
+    script(src='/ela/js/lib/chartist/chartist-init.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js')
+    // Custom JavaScript
+    script(src='/ela/js/custom.min.js')
+    script(src='/ela/js/custom_charts.js')
+    script(src='/ela/js/mynetworkchart.js')

@@ -1,0 +1,26 @@
+// Left Sidebar
+.left-sidebar
+  // Sidebar scroll
+  .scroll-sidebar
+    // Sidebar navigation
+    nav.sidebar-nav
+      ul#sidebarnav
+        li.nav-devider
+        li.nav-label Home
+        li
+          a(href='/', aria-expanded='false')
+            i.fa.fa-tachometer
+            span.hide-menu
+              | Dashboard
+        li
+          a.has-arrow(href='#', aria-expanded='false')
+            i.fa.fa-bar-chart
+            span.hide-menu Profiling
+          ul.collapse(aria-expanded='false')
+            li
+              a(href='/customers') Customers
+            li
+              a(href='/marketBasket') Market Basket
+    // End Sidebar navigation
+  // End Sidebar scroll
+// End Left Sidebar
